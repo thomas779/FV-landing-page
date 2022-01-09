@@ -26,14 +26,15 @@ img {
   height: auto;
 }
 
+/* Button */
+
 button {
   padding: 20px;
-  margin-left: 50px;
   font-family: 'Reem Kufi', sans-serif;
   font-size: 1em;
   border: none;
   color: #303F9F;
-  width: 400px;
+  width: 350px;
 }
 
 .button3{
@@ -69,4 +70,11 @@ button {
 .button3:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+/* Button - Responsive */
+@media (max-width: 900px) {
+  button {
+    font-size: 1.7em;
+  }
 }
