@@ -13,6 +13,8 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ol, ul {
@@ -22,4 +24,49 @@ ol, ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+button {
+  padding: 20px;
+  margin-left: 50px;
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 1em;
+  border: none;
+  color: #303F9F;
+  width: 400px;
+}
+
+.button3{
+  background-color: white;
+  transition: all 0.5s;
+}
+
+.button3 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button3:hover {
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+
+.button3 span:after {
+  content: '\003E';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button3:hover span {
+  padding-right: 25px;
+}
+
+.button3:hover span:after {
+  opacity: 1;
+  right: 0;
 }
