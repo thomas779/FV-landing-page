@@ -29,11 +29,12 @@ img {
 /* Button */
 
 button {
+  margin-top: 35rem;
   padding: 20px;
   font-family: 'Reem Kufi', sans-serif;
-  font-size: 1em;
+  font-size: 1.25em;
   border: none;
-  color: #303F9F;
+  color: #000;
   width: 350px;
 }
 
@@ -73,8 +74,18 @@ button {
 }
 
 /* Button - Responsive */
-@media (max-width: 900px) {
+@media (max-width: 500px) {
   button {
     font-size: 1.7em;
+    width: 300px;
+    margin-top: 35rem;
+  }
+}
+
+@media (max-width: 800px) {
+  button {
+    font-size: 1.7em;
+    width: 300px;
+    margin-top:40rem;
   }
 }
